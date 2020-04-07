@@ -10,3 +10,5 @@ From the command line:
 * Crack key length (output number of matches for various key lengths): `scala Cipher -crackKeyLen <encrypted file>`
 *NOTE: this method requires user analysis to determine which key length is the most likely*
 * Crack message given a key length: `scala Cipher -crackKey <key length> <encrypted file> | sort -n | uniq -c | awk '$1 > 6'`
+
+Encrypted files private1 and private2, as well as plaintext file santa, have been provided for testing purposes.
